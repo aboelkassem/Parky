@@ -11,7 +11,9 @@ using ParkyAPI.Repository.IRepository;
 
 namespace ParkyAPI.Controllers
 {
-    [Route("api/[controller]")]
+    // localhost:5000/api/v1/nationalparks
+    [Route("api/v{version:apiVersion}/nationalparks")]  // default version is 1.0 it's this controller version
+    //[Route("api/[controller]")]
     [ApiController]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public class NationalParksController : Controller

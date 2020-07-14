@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - ParkyWeb</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ParkyWeb</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - ParkyWeb - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://kit.fontawesome.com/707b781e2e.js"crossorigin="anonymous"></script>{"threads":[{"position":0,"start":0,"end":404,"connection":"open"},{"position":808,"start":405,"end":808,"connection":"closed"}],"url":"https://mp4-a.udemycdn.com/2020-02-16_20-58-18-eb7f3271c45d2f082a9bd4dce0e3f2e5/original.txt?Fzt10Sc8lEYMo2QSHwz4l5qcR0SW6NHbd8tILTb0axvuRhqOgBjlFBDBQDaLHm4B0lm2BjYdD2ka2I9h1z4rXWlCXPQBPN35G1Kds3I7JTxjX58PaYKEapjT2ln-wRyln67lpUHYJs9kMWeQZ_Wlu72xFiEQeHlsWuv9PkZ8-vY","method":"GET","port":443,"downloadSize":808,"headers":{"accept-ranges":"bytes","access-control-allow-origin":"*","age":"39498","content-type":"text/plain","date":"Tue, 07 Apr 2020 02:32:50 GMT","etag":"\"8e42e851c2f8fddcc85f8ff7a292131c\"","last-modified":"Sun, 16 Feb 2020 20:58:20 GMT","server":"ECAcc (ama/8AC1)","x-amz-id-2":"exZDtWEmGCj09+JgxaSYqwZF4r5BipFKrflW/RlmfN43fl2Xg/uJE5ahuZxpGlwTzXYsKcxjmrY=","x-amz-meta-qqfilename":"CSS-JS.txt","x-amz-request-id":"509070F670A99144","x-amz-version-id":"l8xsLu1CQU_bLQsdDX5ON50I6928kbkJ","x-cache":"HIT","content-length":"808","connection":"close"}}
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>

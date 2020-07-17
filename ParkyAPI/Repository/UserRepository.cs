@@ -69,7 +69,7 @@ namespace ParkyAPI.Repository
             {
                 Username = username,
                 Password = password,
-                Role = "Admin"
+                Role = "User"
             };
 
             _db.Add(userOjb);
